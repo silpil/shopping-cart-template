@@ -1,0 +1,38 @@
+.select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: $dark;
+  min-height: 80px;
+  min-width: 110px;
+  border: 2px solid $grey;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: border-color 0.3s;
+
+  b {
+    font-weight: 700;
+  }
+
+  &:hover {
+    border-color: $grey-dark;
+  }
+
+  &.is-active {
+    border-color: $main-color;
+  }
+}
+
+.select-box-group {
+  display: flex;
+  margin-left: -($gap / 4);
+  margin-right: -($gap / 4);
+
+  .select-box {
+    margin-left: $gap / 4;
+    margin-right: $gap / 4;
+  }
+}

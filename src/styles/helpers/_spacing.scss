@@ -1,0 +1,77 @@
+.is-marginless {
+  margin: 0 !important
+}
+
+.is-paddingless {
+  padding: 0 !important
+}
+
+.ma {
+  margin: $gap;
+}
+
+.pa {
+  padding: $gap;
+}
+
+.mt {
+  margin-top: $gap;
+}
+
+.mb {
+  margin-bottom: $gap;
+}
+
+.mtb {
+  margin-top: $gap;
+  margin-bottom: $gap;
+}
+
+.ml {
+  margin-left: $gap;
+}
+
+.mr {
+  margin-right: $gap;
+}
+
+.mlr {
+  margin-left: $gap;
+  margin-right: $gap;
+}
+
+//////////
+
+.ma-small {
+  margin: $gap-small;
+}
+
+.pa-small {
+  padding: $gap-small;
+}
+
+.mt-small {
+  margin-top: $gap-small;
+}
+
+.mb-small {
+  margin-bottom: $gap-small;
+}
+
+.mtb-small {
+  margin-top: $gap-small;
+  margin-bottom: $gap-small;
+}
+
+.ml-small {
+  margin-left: $gap-small;
+}
+
+.mr-small {
+  margin-right: $gap-small;
+}
+
+.mlr-small {
+  margin-left: $gap-small;
+  margin-right: $gap-small;
+}

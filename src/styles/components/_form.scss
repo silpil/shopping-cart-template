@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    margin-top: $gap;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include for-tablet {
+    flex-direction: row;
+
+    .input {
+      margin-left: $gap-small / 2;
+      margin-right: $gap-small / 2;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+}

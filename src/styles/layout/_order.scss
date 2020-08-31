@@ -1,0 +1,46 @@
+.order {
+  background: $grey-light;
+  padding: $gap;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  color: $dark;
+
+  @include for-desktop {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}
+
+.order-desktop {
+  display: none;
+}
+
+.order-mobile {
+  max-width: 170px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.order-mobile-sum {
+  margin-bottom: 5px;
+}
+
+.order-sum {
+  display: flex;
+  justify-content: space-between;
+}
+
+@include for-desktop {
+  .order-mobile {
+    display: none;
+  }
+  .order-desktop {
+    display: block;
+  }
+}

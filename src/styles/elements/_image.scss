@@ -1,0 +1,11 @@
+.image {
+  position: relative;
+  display: block;
+
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: $radius;
+  }
+}

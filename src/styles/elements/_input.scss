@@ -1,0 +1,29 @@
+.input {
+  display: inline-flex;
+  flex-grow: 1;
+  border: 2px solid $grey;
+  box-shadow: none;
+  border-radius: $radius;
+  padding: 9px 15px;
+  color: $dark;
+  font-size: 14px;
+  font-weight: 500;
+  transition: border 0.3s;
+  font-family: $font-family;
+
+  &::placeholder  {
+    color: $grey-dark;
+  }
+
+  &:hover {
+    border-color: $grey-dark;
+  }
+
+  &:focus {
+    border-color: $main-color;
+
+    &::placeholder  {
+      color: rgba($main-color, 0.4);
+    }
+  }
+}

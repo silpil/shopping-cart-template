@@ -1,0 +1,16 @@
+.checkout {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1000px;
+  
+  @include for-desktop {
+    flex-direction: row;
+  }
+}
+.checkout-content {
+  display: block;
+  padding: $gap;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

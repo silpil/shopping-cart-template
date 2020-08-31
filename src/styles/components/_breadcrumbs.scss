@@ -1,0 +1,42 @@
+.breadcrumbs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12px;
+  color: $dark;
+
+  li {
+    display: flex;
+
+    &.is-active {
+      a {
+        color: $main-color;
+        &:hover {
+          color: rgba($main-color, 0.8);
+        }
+      }
+    }
+
+    & + li::before {
+      color: $dark;
+      content: "\0002f";
+    }
+
+    &:first-child {
+      a {
+        padding-left: 0;
+      }
+    }
+
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding: 0 5px;
+  }
+} 

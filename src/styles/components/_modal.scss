@@ -1,0 +1,42 @@
+.modal {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  overflow: auto;
+  background: rgba(#000000, 0.5);
+  z-index: 1000;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.is-active {
+    display: block;
+  }
+
+  @include for-desktop {
+    padding-top: $gap * 2;
+    padding-bottom: $gap;
+  }
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+
+  @include for-desktop {
+    margin: 0 auto;
+    width: auto;
+    border-radius: $radius;
+  }
+}
+
+.modal-step {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
