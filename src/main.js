@@ -20,7 +20,7 @@ const onChangeStep = (step) => {
 }
 
 for (let element of changeStep) {
-  element.addEventListener("click", function () {
+  element.addEventListener('click', () => {
     onChangeStep(element.dataset.step);
   }, false);
 }
